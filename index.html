@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Pages with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page</h1>
+    <button id="darkModeToggle"> Toggle Dark Mode</button>
+  </header>
+
+  <!-- Part 1: Event Handling Example -->
+  <section>
+    <h2> Counter Game</h2>
+    <p>Click the button to increase your score!</p>
+    <button id="counterBtn">Click Me!</button>
+    <p>Score: <span id="counterValue">0</span></p>
+  </section>
+
+  <!-- Part 2: Interactive Feature (FAQ) -->
+  <section>
+    <h2> FAQ Section</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer">JavaScript makes web pages interactive and dynamic.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">What is DOM manipulation?</h3>
+      <p class="faq-answer">DOM manipulation means changing the page content using JavaScript.</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2> Signup Form</h2>
+    <form id="signupForm" novalidate>
+      <label>Name: <input type="text" id="name"></label>
+      <span class="error" id="nameError"></span><br>
+
+      <label>Email: <input type="email" id="email"></label>
+      <span class="error" id="emailError"></span><br>
+
+      <label>Password: <input type="password" id="password"></label>
+      <span class="error" id="passwordError"></span><br>
+
+      <button type="submit">Submit</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
